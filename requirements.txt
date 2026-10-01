@@ -1,0 +1,10 @@
+nltk>=3.9,<4
+scikit-learn>=1.5,<2
+wordcloud>=1.9,<2
+pandas>=2.2,<4
+streamlit>=1.57,<2
+langchain>=1.0,<2
+langgraph>=1.0,<2
+langchain-google-genai>=4.0,<5
+langchain-groq>=1.0,<2
+python-dotenv>=1.0,<2

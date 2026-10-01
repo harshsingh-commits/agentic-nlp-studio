@@ -1,0 +1,253 @@
+{
+  "application": "Text similarity and plagiarism screening",
+  "analysis": {
+    "script_validation": {
+      "valid": true,
+      "scripts": {
+        "LATIN": 52
+      },
+      "message": "Single writing script detected"
+    },
+    "tokens": [
+      "Ada",
+      "Lovelace",
+      "wrote",
+      "about",
+      "an",
+      "early",
+      "computing",
+      "machine",
+      "in",
+      "London",
+      "."
+    ],
+    "filtered_tokens": [
+      "ada",
+      "lovelace",
+      "wrote",
+      "about",
+      "an",
+      "early",
+      "computing",
+      "machine",
+      "in",
+      "london"
+    ],
+    "without_stopwords": [
+      "ada",
+      "lovelace",
+      "wrote",
+      "early",
+      "computing",
+      "machine",
+      "london"
+    ],
+    "morphology": [
+      {
+        "word": "ada",
+        "stem": "ada",
+        "lemma": "ada",
+        "generated_regular_forms": [
+          "ada",
+          "adaed",
+          "adaing",
+          "adas"
+        ]
+      },
+      {
+        "word": "lovelace",
+        "stem": "lovelac",
+        "lemma": "lovelace",
+        "generated_regular_forms": [
+          "lovelace",
+          "lovelaced",
+          "lovelaces",
+          "lovelacing"
+        ]
+      },
+      {
+        "word": "wrote",
+        "stem": "wrote",
+        "lemma": "write",
+        "generated_regular_forms": [
+          "write",
+          "writed",
+          "writes",
+          "writing"
+        ]
+      },
+      {
+        "word": "early",
+        "stem": "earli",
+        "lemma": "early",
+        "generated_regular_forms": [
+          "earlied",
+          "earlies",
+          "early",
+          "earlying"
+        ]
+      },
+      {
+        "word": "computing",
+        "stem": "comput",
+        "lemma": "compute",
+        "generated_regular_forms": [
+          "compute",
+          "computed",
+          "computes",
+          "computing"
+        ]
+      },
+      {
+        "word": "machine",
+        "stem": "machin",
+        "lemma": "machine",
+        "generated_regular_forms": [
+          "machine",
+          "machined",
+          "machines",
+          "machining"
+        ]
+      },
+      {
+        "word": "london",
+        "stem": "london",
+        "lemma": "london",
+        "generated_regular_forms": [
+          "london",
+          "londoned",
+          "londoning",
+          "londons"
+        ]
+      }
+    ],
+    "ngrams": {
+      "1": {
+        "ada": 1,
+        "lovelace": 1,
+        "wrote": 1,
+        "early": 1,
+        "computing": 1,
+        "machine": 1,
+        "london": 1
+      },
+      "2": {
+        "ada lovelace": 1,
+        "lovelace wrote": 1,
+        "wrote early": 1,
+        "early computing": 1,
+        "computing machine": 1,
+        "machine london": 1
+      },
+      "3": {
+        "ada lovelace wrote": 1,
+        "lovelace wrote early": 1,
+        "wrote early computing": 1,
+        "early computing machine": 1,
+        "computing machine london": 1
+      }
+    },
+    "pos_tags": [
+      {
+        "word": "Ada",
+        "tag": "NNP"
+      },
+      {
+        "word": "Lovelace",
+        "tag": "NNP"
+      },
+      {
+        "word": "wrote",
+        "tag": "VBD"
+      },
+      {
+        "word": "about",
+        "tag": "IN"
+      },
+      {
+        "word": "an",
+        "tag": "DT"
+      },
+      {
+        "word": "early",
+        "tag": "JJ"
+      },
+      {
+        "word": "computing",
+        "tag": "NN"
+      },
+      {
+        "word": "machine",
+        "tag": "NN"
+      },
+      {
+        "word": "in",
+        "tag": "IN"
+      },
+      {
+        "word": "London",
+        "tag": "NNP"
+      }
+    ],
+    "noun_phrases": [
+      "Ada Lovelace",
+      "an early computing machine",
+      "London"
+    ],
+    "named_entities": [
+      {
+        "text": "Ada",
+        "label": "PERSON"
+      },
+      {
+        "text": "Lovelace",
+        "label": "PERSON"
+      },
+      {
+        "text": "London",
+        "label": "GPE"
+      }
+    ]
+  },
+  "document_similarity": {
+    "documents": [
+      "document_a",
+      "document_b",
+      "document_c"
+    ],
+    "matrix": [
+      [
+        1.0,
+        0.3893,
+        0.0123
+      ],
+      [
+        0.3893,
+        1.0,
+        0.0133
+      ],
+      [
+        0.0123,
+        0.0133,
+        1.0
+      ]
+    ],
+    "pairs": [
+      {
+        "document_a": "document_a",
+        "document_b": "document_b",
+        "similarity_percent": 38.93
+      },
+      {
+        "document_a": "document_b",
+        "document_b": "document_c",
+        "similarity_percent": 1.33
+      },
+      {
+        "document_a": "document_a",
+        "document_b": "document_c",
+        "similarity_percent": 1.23
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+[theme]
+base = "light"
+primaryColor = "#B74634"
+backgroundColor = "#F5F6F1"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#17211D"
+borderColor = "#D6DED7"
+chartCategoricalColors = ["#B74634", "#326C63", "#D6A83E", "#4D74A8", "#9A6078", "#778549"]
+font = "Manrope:https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+headingFont = "'DM Serif Display':https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+baseRadius = "small"
+buttonRadius = "small"
+showWidgetBorder = true
+
+[theme.sidebar]
+backgroundColor = "#EDF0E9"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#17211D"
+primaryColor = "#B74634"
